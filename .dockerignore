@@ -1,0 +1,9 @@
+node_modules
+dist
+build
+.git
+.env.local
+Dockerfile
+README.md
+.yarn/cache
+.yarn/install-state.gz

@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    ports:
+      - '3000:80' # Maps localhost:3000 to container:80
+    environment:
+      - VITE_NEWS_API_KEY=${VITE_NEWS_API_KEY}
+      - VITE_THE_GUARDIAN_API_KEY=${VITE_THE_GUARDIAN_API_KEY}
+      - VITE_NY_TIMES_API_KEY=${VITE_NY_TIMES_API_KEY}
+    container_name: news-hub
